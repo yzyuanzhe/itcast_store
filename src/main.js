@@ -3,9 +3,15 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-
+import ElementUi from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+import '@/assets/css/style.css'
+import MyAxios from '@/plugins/MyAxios'
 Vue.config.productionTip = false
-
+// 注册
+Vue.use(ElementUi)
+Vue.use(MyAxios)
+// 根目录
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
