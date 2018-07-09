@@ -32,15 +32,15 @@ methods:{
     .post('login',this.formData)
     .then((res)=>{
      //判断状态码
-     console.log(res);
+    //  console.log(res);
      const data = res.data;
      const {meta:{status,msg}} = data;
      if(status===200){//登陆成功
     
      const token = data.data.token;
      this.$message.success(msg);
-     sessionStorage.setItem('touken',token);
-    //  this.$route.push({name:})
+     sessionStorage.setItem('token',token);
+     this.$router.push({name:'home'});
 
      }else{
      this.$message.error(msg);
