@@ -10,7 +10,7 @@
           <el-input type="password" v-model="formData.password"></el-input>
         </el-form-item>
         <el-form-item>
-          <el-button type="primary" class="login-button" @click="handlelogin">提交</el-button>
+          <el-button type="primary" class="login-button" @click="handlelogin">登录</el-button>
       </el-form-item>
 </el-form>
 </div>
