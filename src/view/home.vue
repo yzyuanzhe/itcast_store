@@ -13,14 +13,14 @@
       <!-- 左侧导航部分 -->
     <el-aside width="200px" class="leftaside">
         <el-row class="tac">
-            <el-menu default-active="1-1" class="mmenu">
+            <el-menu default-active="1-1" class="mmenu" :router="true">
 
             <el-submenu index="1">
                 <template slot="title">  <!--一级分类 -->
                 <i class="el-icon-location"></i><span>用户管理</span>
                 </template>
                 <el-menu-item-group><!--二级分类 -->
-                <el-menu-item index="1-1"> <i class="el-icon-star-off"></i>用户选项1</el-menu-item>
+                <el-menu-item index="/user"> <i class="el-icon-star-off"></i>用户选项1</el-menu-item>
                 <el-menu-item index="1-2"> <i class="el-icon-star-off"></i>用户选项1</el-menu-item>
                 </el-menu-item-group>
             </el-submenu>
@@ -72,13 +72,7 @@
     </el-aside>
     <!-- 右侧内容部分 -->
    <el-main class="main">
-       <!-- 面包屑 -->
-  <!-- <el-breadcrumb separator-class="el-icon-arrow-right">
-    <el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>
-    <el-breadcrumb-item>活动管理</el-breadcrumb-item>
-    <el-breadcrumb-item>活动列表</el-breadcrumb-item>
-    <el-breadcrumb-item>活动详情</el-breadcrumb-item>
-  </el-breadcrumb> -->
+  <router-view></router-view>
    </el-main>
   </el-container>
 </el-container>

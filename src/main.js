@@ -7,10 +7,15 @@ import ElementUi from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import '@/assets/css/style.css'
 import MyAxios from '@/plugins/MyAxios'
+import moment from 'moment'
 Vue.config.productionTip = false
 // 注册
 Vue.use(ElementUi)
 Vue.use(MyAxios)
+Vue.filter('fmtDate', (value, fmtString) => {
+  return moment(value).format(fmtString)
+});
+
 // 根目录
 /* eslint-disable no-new */
 new Vue({
