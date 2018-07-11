@@ -6,7 +6,7 @@
     <el-breadcrumb-item>活动管理</el-breadcrumb-item>
     <el-breadcrumb-item>活动列表</el-breadcrumb-item>
     <el-breadcrumb-item>活动详情</el-breadcrumb-item>
-
+</el-breadcrumb>
     <!-- 搜索框 -->
     <div class="sousuo">
         <el-row>
@@ -141,7 +141,7 @@
   </el-pagination>
   </div>
     
-</el-breadcrumb>
+
  </el-card>
 </template>
 <script>

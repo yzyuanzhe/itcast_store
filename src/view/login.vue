@@ -32,7 +32,7 @@ methods:{
     .post('login',this.formData)
     .then((res)=>{
      //判断状态码
-    //  console.log(res);
+     console.log(res);
      const data = res.data;
      const {meta:{status,msg}} = data;
      if(status===200){//登陆成功
